@@ -6,7 +6,6 @@ import FatalErrorPage from 'src/pages/FatalErrorPage'
 import './index.css'
 import './scaffold.css'
 
-
 const App = ({ children }) => (
   <FatalErrorBoundary page={FatalErrorPage}>
     <RedwoodProvider titleTemplate="%PageTitle | %AppTitle">

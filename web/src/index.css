@@ -1,9 +1,11 @@
+
+
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f9fa;
+  margin: auto;
+  padding: 1rem;
+  background-color: #eeeeee;
   color: #333;
   line-height: 1.6;
 }
@@ -26,12 +28,18 @@ h1, h2, h3 {
 
 /* Links */
 a {
-  color: #007bff;
+  color: #1784f8;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+#site-name {
+  text-decoration: none !important; /* Removes underline */
+  color: inherit !important; /* Makes the text color match the surrounding text */
+  cursor: default; /* Changes the cursor to default instead of a pointer */
 }
 
 /* Forms */
