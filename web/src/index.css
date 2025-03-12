@@ -47,29 +47,41 @@ form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  max-width: 400px; /* Prevents form from stretching too wide */
+  width: 100%; /* Makes it responsive */
+  margin: 0 auto; /* Centers form on larger screens */
+  padding: 20px;
 }
 
+/* Labels */
 label {
   font-weight: bold;
+  text-align: left; /* Ensures left alignment */
 }
 
+/* Inputs, Textareas, and Selects */
 input, textarea, select {
-  width: 100%;
   padding: 10px;
   margin-top: 5px;
-  border: 1px solid #ccc;
+
   border-radius: 5px;
   font-size: 1rem;
+  width: 100%; /* Ensures responsiveness */
+  max-width: 100%; /* Prevents stretching beyond container */
 }
 
+/* Textarea specific styling */
 textarea {
-  height: 120px;
+  resize: vertical; /* Allows resizing vertically but not horizontally */
+  min-height: 100px;
 }
 
-input:focus, textarea:focus, select:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0px 0px 4px rgba(0, 123, 255, 0.5);
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  form {
+    max-width: 90%; /* Makes form fit better on smaller screens */
+    padding: 10px;
+  }
 }
 
 /* Buttons */
